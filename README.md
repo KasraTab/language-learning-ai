@@ -6,19 +6,6 @@ The purpose of this project is to help users learn languages through vocabulary 
 
 ---
 
-# Features
-
-## Current Features
-
-- Vocabulary flashcards
-- Interactive quizzes
-- Responsive UI
-- Progress tracking
-- Local persistence
-- Mobile-first experience
-
----
-
 # Getting Started
 
 ## Install dependencies
