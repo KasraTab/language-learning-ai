@@ -46,6 +46,27 @@ live in `public/` (images, SVG logos, video, favicons) and are served as-is by V
 - Avoid deeply nested prop drilling; introduce context only when needed
 - Do not mutate arrays or objects directly
 
+## Command and Safety Rules
+
+Safe commands that may be executed automatically:
+- npm run dev
+- npm run build
+- npm run lint
+- npm test
+
+Always ask before:
+- deleting files
+- modifying configuration files
+- changing dependencies
+- running git reset
+- force pushing
+- modifying environment variables
+
+Prefer:
+- minimal diffs
+- isolated changes
+- explaining reasoning before large refactors
+
 ## App architecture
 
 Suggested structure:
@@ -63,3 +84,5 @@ src/
   data/
   types/
   styles/
+
+
