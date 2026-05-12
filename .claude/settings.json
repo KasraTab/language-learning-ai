@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npm ci)",
+      "Bash(npm test)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)"
+    ]
+  }
+}

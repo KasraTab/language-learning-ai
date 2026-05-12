@@ -2,13 +2,21 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Sidebar from './components/Sidebar/Sidebar'
 import './App.css'
+
+const profile = {
+  name: 'Kasra A.',
+  tag: 'Learner',
+  initials: 'KA',
+}
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Sidebar profile={profile} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -16,7 +24,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>Language learner AI app</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -29,7 +37,6 @@ function App() {
           Count is {count}
         </button>
       </section>
-
       <div className="ticks"></div>
 
       <section id="next-steps">
