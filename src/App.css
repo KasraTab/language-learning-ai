@@ -161,6 +161,15 @@
   }
 }
 
+.feature-page {
+  flex-grow: 1;
+  padding: 48px 32px;
+  text-align: left;
+  @media (max-width: 1024px) {
+    padding: 32px 20px;
+  }
+}
+
 .ticks {
   position: relative;
   width: 100%;

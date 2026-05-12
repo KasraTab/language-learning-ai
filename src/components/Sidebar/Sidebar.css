@@ -102,9 +102,58 @@ body.sidebar-open {
 
 .sidebar-nav {
   flex: 1 1 auto;
-  padding: 12px;
+  padding: 12px 8px;
   overflow-y: auto;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.sidebar-nav-link:hover {
+  background: var(--social-bg);
+  color: var(--text-h);
+}
+
+.sidebar-nav-link.is-active {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.sidebar-nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sidebar-nav-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.sidebar-nav-label {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.sidebar.is-collapsed .sidebar-nav-label {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .sidebar-footer {
