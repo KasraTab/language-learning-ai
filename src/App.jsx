@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router'
 import Sidebar from './components/Sidebar/Sidebar'
+import { user } from './data/user'
 import Home from './features/home/Home'
 import Lessons from './features/lessons/Lessons'
 import Vocabulary from './features/vocabulary/Vocabulary'
@@ -7,16 +8,10 @@ import Quizzes from './features/quizzes/Quizzes'
 import Progress from './features/progress/Progress'
 import './App.css'
 
-const profile = {
-  name: 'Kasra A.',
-  tag: 'Learner',
-  initials: 'KA',
-}
-
 function App() {
   return (
     <>
-      <Sidebar profile={profile} />
+      <Sidebar profile={user} />
       <Routes>
         <Route index element={<Home />} />
         <Route path="lessons" element={<Lessons />} />
