@@ -31,6 +31,11 @@ tablet: 600px, desktop: 992px, large: 1200px
 - Functional components + hooks; keep components small; extract reusable logic to custom hooks.
 - Controlled forms; keep state close to where it's used; prefer derived state; introduce context only when prop drilling actually hurts.
 - Never mutate arrays/objects in place.
+- Keep the UI clean, modern, and responsive.
+- Use reusable components where it makes sense.
+- Use mock data/constants for now instead of hardcoding everything directly in JSX.
+- Make sure all links use the existing React Router setup.
+- Keep the code consistent with the existing project structure and styling approach.
 - Suggested feature layout when adding real features: `src/features/{lessons,vocabulary,quizzes,progress}/`, plus `src/components/`, `src/hooks/`, `src/lib/`, `src/data/`, `src/styles/`.
 - Ask before: deleting files, changing dependencies, modifying config, or any destructive git operation.
 
